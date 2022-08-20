@@ -1,18 +1,22 @@
 class Book {
 
-  BigInt _id;
-  String _title;
-  String _author;
-  int _year;
-  int _edition;
-  String _publishingCompany;
-  String _isbn;
+  BigInt? _id;
+  String? _title;
+  String? _author;
+  int? _year;
+  int? _edition;
+  String? _publishingCompany;
+  String? _isbn;
 
-  Book(this._id, this._title, this._author, this._year, this._edition, this._publishingCompany, this._isbn);
+  Book(){}
 
-  String get title => this._title;
+  BigInt? get id => this._id;
 
-  set title(String value) => this._title = value;
+  set id(BigInt? value) => this._id = value;
+
+  get title => this._title;
+
+  set title( value) => this._title = value;
 
   get author => this._author;
 
@@ -28,12 +32,10 @@ class Book {
 
   get publishingCompany => this._publishingCompany;
 
-  set setPublishingCompany( publishingCompany) => this._publishingCompany = publishingCompany;  
+  set publishingCompany( value) => this._publishingCompany = value;
 
-  String get isbn => this._isbn;
+  get isbn => this._isbn;
 
-  set isbn(String value) => this._isbn = value;
+  set isbn( value) => this._isbn = value;
 
-  BigInt get id => this._id;
-  
 }
